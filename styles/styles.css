@@ -1,0 +1,48 @@
+/* General Styles */
+html {
+    scroll-padding-top: 6rem;
+}
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(205,209,221,1) 50%, rgba(255,255,255,1) 100%);
+}
+#home, #projects, #contact {
+    height: 100vh;
+    padding-top: 10px;
+}
+/* Nav */
+ul {
+    height: 10vh;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+a, a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+}
+/* Contact */
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#inputName, #inputEmail, #inputMessage, #submitButton, #contactText {
+    margin-top: 5px;
+    width: 40vw;
+}
+h1, #contactText {
+    padding-bottom: 15px;
+}
+/* Assets */
+#portfolio-photo {
+    max-height: 30vh;
+    min-height: auto;
+    max-width: 15vw;
+    min-width: auto;
+    border-radius: 10px;
+}
