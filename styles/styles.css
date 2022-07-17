@@ -33,7 +33,6 @@ a, a:link, a:visited, a:hover, a:active {
 }
 #inputName, #inputEmail, #inputMessage, #submitButton, #contactText {
     margin-top: 5px;
-    width: 40vw;
 }
 h1, #contactText {
     padding-bottom: 15px;
@@ -45,4 +44,12 @@ h1, #contactText {
     max-width: 15vw;
     min-width: auto;
     border-radius: 10px;
+}
+.mobile-breakpoint, #contactText {
+    width: 50vw;
+}
+@media (max-width: 767.98px) {
+    .mobile-breakpoint, #contactText {
+        width: 90vw;
+    }
 }
