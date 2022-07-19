@@ -2,8 +2,8 @@
 /*global window */
 /*global document */
 
-const clicker = document.getElementById('clicker');
-clicker.addEventListener('click', () => {
+const homeText = document.getElementById('homeText');
+homeText.addEventListener('click', () => {
     'use strict';
     window.alert('You clicked me!');
 });

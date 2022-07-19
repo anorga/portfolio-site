@@ -15,58 +15,139 @@
     <!-- NAV -->
     <nav class="sticky-top">
         <ul>
-            <li><a href="#clicker">Home</a></li>
+            <li><a href="#portfolio-photo">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <!-- CONTENT -->
+    <!-- HOME -->
     <div class="container">
         <div id="home" class="row">
-            <div class="col">
-                <h1>Hello, I'm <span class="name">Chris</span></h1>
+            <div id="homeCol1" class="col">
                 <img src="assets/portfolio.jpeg" alt="professional photo" id="portfolio-photo">
-            </div>
-            <div class="col">
-                <p id="clicker">
-                    Hello world? My name is Christian Anorga. I am a Front-End developer with some Back-End experience.
-                    My current technology stacks include HTML, CSS, JavaScript, TypeScript, React, Node, Express,
-                    MongoDB, and more. My current portfolio can be found at github.com/anorga.
+                <p id="homeText">
+                    Hello world! My name is Christian Anorga. I'm a front-end web developer with a deep passion for
+                    JavaScript, React and all things web development. The unique combination of creativity, logic,
+                    technology and endless things to learn and discover, drives my excitement and passion for web
+                    development. When I'm not at my computer I like to spend my time reading, keeping fit and playing
+                    rpg games.
                 </p>
             </div>
-        </div>
-        <div id="projects">
-            <p>
-                hi
-            </p>
+            <!-- SKILLS -->
+            <div class="col" id="skillsCol">
+                <div>
+                    <img src="assets/html.png" alt="skill logo" class="skillPng" id="htmlPng">
+                    <img src="assets/css.png" alt="skill logo" class="skillPng" id="cssPng">
+                    <img src="assets/js.png" alt="skill logo" class="skillPng" id="jsPng">
+                    <img src="assets/react.png" alt="skill logo" class="skillPng" id="reactPng">
+                    <img src="assets/node.png" alt="skill logo" class="skillPng" id="nodePng">
+                    <img src="assets/express.png" alt="skill logo" class="skillPng" id="expressPng">
+                    <img src="assets/mongo.png" alt="skill logo" class="skillPng" id="mongoPng">
+                    <img src="assets/git.png" alt="skill logo" class="skillPng" id="gitPng">
+                </div>
+            </div>
         </div>
     </div>
+    <!-- PROJECTS -->
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+    <!-- <div class="container">
+        <div id="projects">
+            <h1>Projects</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/readmangas.xyz.png" alt="project photo" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Read Mangas</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ex euismod,
+                                consectetur nisi eu, consectetur nisi.
+                            </p>
+                            <a href="https://github.com/anorga/manga-react-app" class="btn btn-primary">Read Mangas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/weatherapp.png" alt="project photo" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Weather App</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ex euismod,
+                                consectetur nisi eu, consectetur nisi.
+                            </p>
+                            <a href="#" class="btn btn-primary">Weather App</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="assets/weatherapp.png" alt="project photo" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Weather App</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ex euismod,
+                                consectetur nisi eu, consectetur nisi.
+                            </p>
+                            <a href="#" class="btn btn-primary">Weather App</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
     <!-- CONTACT -->
-    <section id="contact" class="container d-flex align-items-center justify-content-center">
+    <div id="contact" class="container d-flex align-items-center justify-content-center">
         <h1>Contact</h1>
         <p id="contactText">
-            Have a question or want to work together? Leave your details and I'll get back to you as soon as
+            Have a question or want to work together? Leave your details and I'll get back to you as
+            soon as
             possible.
         </p>
         <form class="mobile-breakpoint">
             <div class="form-group">
-                <input type="name" class="form-control" id="inputName" placeholder="Name">
+                <input type="text" class="form-control" id="inputName" placeholder="Name">
             </div>
             <div class="form-group">
-                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
-                    placeholder="Email">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
             </div>
             <div class="input-group">
                 <textarea class="form-control" id="inputMessage" placeholder="Message"></textarea>
             </div>
             <button type="submit" id="submitButton" class="btn btn-dark">Submit</button>
         </form>
-    </section>
+    </div>
+    <!-- JS -->
     <script src="script.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

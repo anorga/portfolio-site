@@ -3,19 +3,22 @@ html {
     scroll-padding-top: 6rem;
 }
 body {
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(205,209,221,1) 50%, rgba(255,255,255,1) 100%);
+    background: rgb(40,49,54);
+    background: radial-gradient(circle, rgba(40,49,54,1) 26%, rgba(64,64,64,1) 80%);
 }
 #home, #projects, #contact {
     height: 100vh;
     padding-top: 10px;
+    font-size: 1.2rem;
+    color: white;
 }
 /* Nav */
 ul {
     height: 10vh;
     list-style-type: none;
     overflow: hidden;
-    background-color: #333;
+    background-color: #283136;
+    /* background-color: #333; */
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
@@ -25,11 +28,34 @@ a, a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: white;
 }
+/* Home */
+#homeCol1 {
+    text-align: center;
+}
+#homeText {
+    text-align: left;
+}
+/* Skills */
+#skillsCol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 /* Contact */
+.mobile-breakpoint, #contactText {
+    width: 50vw;
+}
+@media (max-width: 767.98px) {
+    .mobile-breakpoint, #contactText {
+        width: 90vw;
+    }
+}
 #contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: 1.2rem;
 }
 #inputName, #inputEmail, #inputMessage, #submitButton, #contactText {
     margin-top: 5px;
@@ -39,17 +65,18 @@ h1, #contactText {
 }
 /* Assets */
 #portfolio-photo {
-    max-height: 30vh;
+    max-height: 40vh;
     min-height: auto;
-    max-width: 15vw;
+    max-width: 20vw;
     min-width: auto;
     border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
-.mobile-breakpoint, #contactText {
-    width: 50vw;
+.skillPng {
+    border-radius: 10px;
+    height: 75px;
+    width: 75px;
+    padding: 5px;
 }
-@media (max-width: 767.98px) {
-    .mobile-breakpoint, #contactText {
-        width: 90vw;
-    }
-}
+
