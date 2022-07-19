@@ -126,3 +126,4 @@ dist
 .yarn/install-state.gz
 .pnp.*
 portfolio-site.code-workspace
+.gitattributes
